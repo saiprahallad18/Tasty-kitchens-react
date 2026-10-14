@@ -1,0 +1,91 @@
+.site-header {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.site-header-content {
+  display: flex;
+  min-height: 72px;
+  max-width: 1120px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 12px 24px;
+}
+
+.site-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #f7931e;
+  text-decoration: none;
+}
+
+.site-logo-image {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.site-logo-text {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.site-nav-link {
+  color: #334155;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.site-nav-link.active {
+  color: #f7931e;
+  font-weight: 700;
+}
+
+.logout-button {
+  padding: 9px 16px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #f7931e;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media (max-width: 480px) {
+  .site-header-content {
+    min-height: 64px;
+    padding: 10px 16px;
+  }
+
+  .site-logo-image {
+    width: 32px;
+    height: 32px;
+  }
+
+  .site-logo-text {
+    font-size: 16px;
+  }
+
+  .site-nav {
+    gap: 12px;
+  }
+
+  .site-nav-link {
+    font-size: 13px;
+  }
+
+  .logout-button {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+}

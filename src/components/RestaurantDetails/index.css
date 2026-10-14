@@ -1,0 +1,136 @@
+.restaurant-details-page {
+  min-height: 70vh;
+  color: #1f2933;
+}
+
+.restaurant-details-loader {
+  display: flex;
+  min-height: 60vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.restaurant-details-banner {
+  display: flex;
+  min-height: 280px;
+  align-items: center;
+  gap: 32px;
+  padding: 32px max(24px, calc((100% - 1120px) / 2));
+  background-color: #1f2933;
+  color: #ffffff;
+}
+
+.restaurant-details-image {
+  width: 300px;
+  height: 210px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.restaurant-details-info h1 {
+  margin: 0 0 12px;
+  font-size: 30px;
+}
+
+.restaurant-details-info p {
+  margin: 8px 0;
+}
+
+.food-items-section {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 32px 24px 48px;
+}
+
+.food-items-section > h2 {
+  margin: 0 0 24px;
+}
+
+.food-items-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.food-item {
+  display: flex;
+  min-width: 0;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+.food-item-image {
+  width: 140px;
+  height: 120px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.food-item-info {
+  min-width: 0;
+}
+
+.food-item-info h3 {
+  margin: 4px 0 8px;
+  font-size: 18px;
+}
+
+.food-item-info p {
+  margin: 6px 0;
+  color: #64748b;
+}
+
+.add-food-button,
+.food-quantity-controls button {
+  min-width: 36px;
+  min-height: 34px;
+  border: 1px solid #f7931e;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #f7931e;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.food-quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+@media (max-width: 700px) {
+  .restaurant-details-banner {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px 16px;
+  }
+
+  .restaurant-details-image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .food-items-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 420px) {
+  .food-item {
+    flex-direction: column;
+  }
+
+  .food-item-image {
+    width: 100%;
+    height: 180px;
+  }
+}
