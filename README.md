@@ -1,16 +1,57 @@
-# React + Vite
+# Tasty Kitchens
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A responsive restaurant and food ordering app built with React. Users can sign in, browse restaurants and menus, and manage food items in a shopping cart.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Sign in using the Tasty Kitchens login API
+- Protected routes for app pages
+- Browse restaurant offers and restaurant listings
+- Search, sort, and paginate restaurant results
+- View restaurant details and menu items
+- Add food to the cart and change item quantities
+- Save cart data in browser local storage
+- Responsive layout, loading indicators, and error views
 
-## React Compiler
+## Routes
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Path | Page |
+| --- | --- |
+| `/login` | Login |
+| `/` | Home and restaurant listings |
+| `/restaurant/:id` | Restaurant details and menu |
+| `/cart` | Shopping cart |
+| Any unknown path | Page not found |
 
-## Expanding the Oxlint configuration
+## Technologies
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- React
+- Vite
+- React Router
+- React Icons
+- React Loader Spinner
+
+## Run the project locally
+
+Install dependencies:
+
+```bash
+npm install
+
+src/
+├── components/
+│   ├── AllRestaurants/
+│   ├── Cart/
+│   ├── Footer/
+│   ├── Header/
+│   ├── Home/
+│   ├── LoginForm/
+│   ├── NotFound/
+│   ├── ProtectedRoute/
+│   └── RestaurantDetails/
+├── App.jsx
+├── index.css
+└── main.jsx
+
+public/
+└── Images and public assets
